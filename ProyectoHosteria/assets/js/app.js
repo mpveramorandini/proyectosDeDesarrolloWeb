@@ -44,3 +44,49 @@ navLink.forEach((link) =>
     ul.classList.remove("show");
   })
 );
+
+/*carusel*/
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+let slideIntervalo = setInterval(() => {
+  plusSlides(1);
+}, 3000);
+
+let slideshowContainer = document.getElementsByClassName('slideshow-container')[0];
+slideshowContainer.addEventListener('mouseenter', () => {
+  clearInterval(slideIntervalo);
+});
+
+slideshowContainer.addEventListener('mouseleave', () => {
+  slideIntervalo = setInterval(() => {
+    plusSlides(1);
+  }, 3000);
+});
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+

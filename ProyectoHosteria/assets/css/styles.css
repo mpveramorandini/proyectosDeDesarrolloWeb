@@ -166,6 +166,19 @@ nav ul li a.activo{
   padding-top: 2.5rem;
   gap: 24px;
 }
+.slide {
+  width: 80%;
+  display: none;
+  position: relative;
+}
+.slide.active {
+  display: block;
+}
+.slide img {
+  width: 80%;
+  height: 80%;
+}
+
 
 .aCercaImg {
   width: 40%;
@@ -183,10 +196,59 @@ nav ul li a.activo{
   font-weight: 100;
   line-height: 2rem;
   text-align: left;
+  padding-right: 10rem;
 }
 
 .aCercaPalabras p {
   padding-bottom: 1.5rem;
+}
+
+/*carusel*/
+* {
+  box-sizing: border-box;
+}
+
+.contenedorCaruselCerca {
+  position: relative;
+  padding-left: 10rem;
+
+}
+
+.mySlides {
+  justify-content: center;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+
+  padding: 16px;
+  margin-top: -50px;
+  color:gray;
+
+  font-size: 15px;
+  /* border-radius: 0 3px 3px 0; */
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev,
+.next {
+  color:white;
+  font-size: 15px; 
+  user-select: none;
+  -webkit-user-select: none;
+  
 }
  
 /*tarifas*/
@@ -221,7 +283,17 @@ nav ul li a.activo{
   margin: 0 auto;
   padding-top: 2rem;
 }
+.contenedorCarusel {
+  position: relative;
+ width: 100%;
 
+}
+/* .punaImg {
+ max-width: 100%;
+ margin: 0 auto;
+ display: flex;
+ justify-content: center;
+} */
 .tituloPuna {
   color: #5b5b5b;
   padding: 3px;
@@ -274,6 +346,11 @@ nav ul li a.activo{
   font-weight: 500;
   font-style: normal;
 }
+.serviciosImg {
+  position: relative;
+ width: 100%;
+}
+
 
 .servicios {
   max-width: 960px;
@@ -478,20 +555,43 @@ body{
 .tituloAcercaDe , .tituloContacto , .tituloPuna , .tituloServicios , .tituloTarifas{
   text-align: center;
 }
-.contenedorAcerca{
-  display: block;
 
+.tarifas h3, .tarifas h4 , .tarifas p{
+  text-align: center;
+}
+/*ver!!!!!*/
+/* .contenedorAcerca{
+ width: 100%;
+ flex-wrap: wrap;
+ justify-content: center;
+} */
+ .slide{
+  width:100%;
+} 
+.contenedorAcerca{
+ flex-wrap: wrap;
+ width: 100%;
+justify-content: center;
+}
+.aCercaPalabras{
+  text-align:left;
+  justify-content: center;
+  width: 100%;
+  padding: 0 1rem 0 1rem;
+  
+  }
+
+.contenedorCaruselCerca{
+  padding: 0;
 }
 .aCercaImg{
   width:100%;
 }
 .contenedorP{
   width: 100%;
-  padding-left: 1rem;
 }
-.tarifas h3, .tarifas h4 , .tarifas p{
-  text-align: center;
-}
+
+
 
  .ContenedorContacto{
   width: 100%;
@@ -518,6 +618,7 @@ iframe{
 .boton{
   padding-top:1rem ;
 }
+
 }
 
 /*En teléfonos pequeños como el iPhone 6, 7, y 8 plus, los iconos de redes sociales y el icono de desplazamiento-hacia-arriba no se muestran.
