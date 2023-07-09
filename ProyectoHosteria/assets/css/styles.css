@@ -1,0 +1,528 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
+/* Variables */
+:root {
+  --font-family: "Work Sans", Sans-serif;
+  --normal-font: 400;
+  --bold-font: 700;
+  --bolder-font: 900;
+  --bg-color:white;
+  --primary-color: #9c8c72;
+  --secondary-color: #464342;
+  --primary-shadow: #8b8eaf;
+  --secondary-shadow: #624234;
+  --bottom-margin: 0.5rem;
+  --bottom-margin-2: 1rem;
+  --line-height: 1.7rem;
+  --transition: 0.3s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* CSS Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 2px solid red; */
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color:var(--primary-color);
+}
+
+a:hover {
+  text-decoration: none;
+  color:var(--secondary-color);
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+
+/*barra de navegacion*/
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1; /*La propiedad de  z-index con el valor de 1  se asegura de que la barra de navegación se muestre
+   sobre cualquier otro elemento de la página web*/
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 2rem 2rem 6rem;
+  background-color: var(--bg-color);
+  border-bottom: solid 1px  #9c8c72;
+
+}
+nav h1 {
+  color: var(--primary-color);
+  font-size: 2rem;
+ 
+}
+
+nav a {
+  color: var(--primary-color);
+  transition: var(--transicion);
+  text-transform: uppercase;
+  font-weight: 100;
+ 
+}
+/* nav a:hover {
+  color: var(--secondary-color);
+} */
+
+nav ul {
+  display: flex;
+  gap: 1.9rem;
+}
+
+/* nav ul li {
+  font-weight: var( --bold-font); 
+} */
+
+
+nav ul li a.activo{
+ color: var(--secondary-color);
+}
+
+/*El menú hamburguesa necesita estar escondido.
+ Aplicarle un atributo de display con valor de none.*/
+.menu-hamburguesa {
+  color: var(--primary-color);
+  font-size: 2rem;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  display: none;
+}
+.abajo{
+  background-color: #9c8c72;
+  color: white;
+  display:flex;
+  padding: 1rem 3rem ;
+  justify-content: space-between;
+}
+.abajo a{
+  color: white;
+}
+
+/*home*/
+.homeimg{
+  padding-top: 1rem;
+}
+.columna {
+  width: 100%;
+  padding-top: 2rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.columna p {
+  text-align: center;
+  color: rgb(81, 80, 80);
+  padding: 1rem;
+  text-align: left;
+ font-weight: 100;
+ line-height: 2rem;
+}
+
+.columna h2 {
+  color: rgb(81, 80, 80);
+  font-weight: var( --bold-font);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/*a cerca de */
+
+.tituloAcercaDe {
+  color: #5b5b5b;
+  padding: 3px;
+  background-color: var(--bg-color);
+  padding: 2rem 6rem;
+  text-align: left;
+  background-color:rgba(156,140,114,0.34); 
+  font-size: 22px;
+ font-weight:  100px;
+  font: 1em sans-serif;
+  text-transform: uppercase;
+  line-height: 1.3;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.contenedorAcerca {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2.5rem;
+  gap: 24px;
+}
+
+.aCercaImg {
+  width: 40%;
+  /* height: 37.5rem;
+  width: 37.5rem; */
+}
+
+.contenedorP {
+  width: 40%;
+}
+
+.aCercaPalabras {
+  padding-top: 6rem;
+  color: rgb(81, 80, 80);
+  font-weight: 100;
+  line-height: 2rem;
+  text-align: left;
+}
+
+.aCercaPalabras p {
+  padding-bottom: 1.5rem;
+}
+ 
+/*tarifas*/
+.tituloTarifas {
+  color: #5b5b5b;
+  padding: 3px;
+  background-color: var(--bg-color);
+  padding: 2rem 6rem;
+  text-align: left;
+  background-color:rgba(156,140,114,0.34); 
+  font-size: 22px;
+ font-weight:  100px;
+  font: 1em sans-serif;
+  text-transform: uppercase;
+  line-height: 1.3;
+  font-weight: 500;
+ 
+}
+
+.tarifas p, h3, h4{
+  text-align: center;
+  color: rgb(81, 80, 80);
+  padding: 1rem;
+  text-align: left;
+ font-weight: 100;
+ line-height: 2rem;
+}
+
+/*destino puna*/
+.puna{
+  max-width: 960px;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.tituloPuna {
+  color: #5b5b5b;
+  padding: 3px;
+  background-color: var(--bg-color);
+  padding: 2rem 6rem;
+  text-align: left;
+  background-color:rgba(156,140,114,0.34); 
+  font-size: 22px;
+  font: 1em sans-serif;
+  text-transform: uppercase;
+  line-height: 1.3;
+  font-weight:lighter;
+
+}
+
+.puna p, h3, h4{
+  text-align: center;
+  color: rgb(81, 80, 80);
+  padding: 1rem;
+  text-align: left;
+ font-weight: 100;
+ line-height: 2rem;
+}
+
+.puna h3{
+  color:#9b742d;
+  font-family: "Work Sans", Sans-serif;
+  font-weight: 400;
+  font-size: 2.25rem;
+}
+.puna h4{
+  font-weight:var(--bold-font);
+  padding-bottom: 0;
+  font-size: 1.25rem;
+}
+
+/*servicios*/
+.tituloServicios {
+  color: #5b5b5b;
+  padding: 3px;
+  background-color: var(--bg-color);
+  padding: 2rem 6rem;
+  text-align: left;
+  background-color: rgba(156, 140, 114, 0.34);
+  font-size: 22px;
+  font-weight: 100px;
+  font: 1em sans-serif;
+  text-transform: uppercase;
+  line-height: 1.3;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.servicios {
+  max-width: 960px;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+.servicios h3{
+  color:#9b742d;
+  font-family: "Work Sans", Sans-serif;
+  font-weight: 500;
+  font-size: 1.75rem;
+  padding-bottom: 0%;
+}
+.servicios p, ul {
+  text-align: center;
+  color: rgb(81, 80, 80);
+  padding: 1rem;
+  text-align: left;
+ font-weight: 100;
+ line-height: 2rem;
+}
+
+
+/*contacto*/
+.tituloContacto {
+  color: #5b5b5b;
+  padding: 3px;
+  background-color: var(--bg-color);
+  padding: 2rem 6rem;
+  text-align: left;
+  background-color: rgba(156, 140, 114, 0.34);
+  font-size: 22px;
+  font-weight: 100px;
+  font: 1em sans-serif;
+  text-transform: uppercase;
+  line-height: 1.3;
+  font-weight: 500;
+  font-style: normal;
+}
+.form , .ubicacion{
+  width: 50%;
+}
+.form h2{
+  color: #5b5b5b;
+  font-size: 20px;
+  padding-bottom: 1.25rem;
+  padding-top: 3.5rem;
+}
+.contacto, .contactos{
+  max-width: 960px;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+.formulario p{
+  display:block; 
+  font-size: 15px;
+}
+.formulario p label{
+  min-width:80px;/*espacio minimo que ocupa el label*/
+  display:flex; /*caja contenedora*/
+  align-items:center; /*para que quede la etiqueta en el medio de la caja*/
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+.formulario p input, 
+.formulario p textarea{
+  width: 90%;
+  border: 1px solid #5b5b5b;
+  font-size: 14px;
+  padding: 6px 10px;
+  color: #5b5b5b;;
+}
+
+
+.formulario textarea{
+  resize:none;/*deja fijo el tamaño del area*/
+  height:150px;
+} 
+
+.formulario input[type="submit"]{
+  background:#9c8c72;
+  color: white;
+  font-size: 16px;
+  padding: 12px 20px;
+  width: auto;/*ancho del boton*/
+  left: 5rem;/*alineacion*/
+  cursor: pointer; /*aparece la manito*/
+  border-radius: 6px;
+  border: #9c8c72 solid 1px;
+}
+.formulario input[type="submit"]:hover{
+  background-color:#9b742d;/*cambia de color cuando pasa la manito*/
+}
+.boton{
+  padding-top: 2rem;
+}
+
+.contacto{
+  display: flex;
+  justify-content: space-between;
+  flex-direction:row;
+  gap: 24px; 
+  color: rgb(81, 80, 80);
+}
+.ubicacion{
+  display: flex;
+  justify-content:center;
+  flex-direction:column;
+}
+.ubicacion a{
+  padding-top: 2rem;
+  color: rgb(81, 80, 80);
+}
+iframe{
+  width: 100%;
+}
+.contactos{
+ padding-top: 2rem;
+}
+.contactos li{
+  line-height: 2.5;
+}
+
+
+
+/*footer*/
+footer {
+  background-color: #9c8c72;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  margin: 2rem 0 0;
+} 
+
+/*boton para desplazarse hacia arriba
+se recomienda usar clases  para dar estilos y ids para las funcionalidades que agregaremos con JavaScript.
+*/
+/* el icono de desplazarse-hacia-arriba tendra una propiedad de fixed para que se quedé estático como los iconos de redes sociales.
+También le daremos una propiedad de pointer al cursor, para que este cambie cuando posicionamos el cursor encima del icono.*/
+
+.desplazarse-hacia-arriba {
+  position: fixed;
+  right: 1%;
+  bottom: 3%;
+  cursor: pointer;
+}
+
+.flecha-arriba {
+  width: 3rem;
+  height: 3rem;
+}
+
+/*responsivo*/
+
+@media screen and (max-width: 720px) {
+  /* los cambios se reflejan en una pantalla con un ancho de 720px e inferior */
+  nav {
+    padding: 1.5rem 1rem;
+  }
+
+/*Para hacer el menú de hamburguesas, debemos sacar los elementos del menú de navegación del viewport.
+  Luego, debemos establecer una clase de presentacion  en los elementos de la lista de navegación que se 
+  alternarán con JavaScrip (recordemos que los elementos de navegación están en una lista desordenada).*/
+/*establecimos una posición de fixed en la lista desordenada (ul) para que flote en la pantalla. 
+ lo empuje 86px hacia abajo desde la parte superior con top: 86px y 10% a la izquierda.*/
+ /*Le dimos un ancho de 80% en relación a su elemento padre (el elemento de navegación del HTML), lo empujó hacia el centro context-align: center,
+   y lo oculto con la propiedad de transformación establecida en translateX(120%). Esto lo empujará hacia la derecha y lo sacará del viewport.
+    Cuando el usuario de click para mostrar los elementos de la barra de navegación, todos se deslizan desde la derecha o desde la izquierda 
+     transform: translateX(-120%);*/
+  nav ul {
+    position: fixed;
+    background-color: var(--bg-color);
+    flex-direction: column;
+    top: 86px;
+    left: 10%;
+    width: 80%;
+    text-align: center;
+    transform: translateX(120%);
+    transition: transform 0.5s ease-in;
+  }
+
+   nav ul li {
+    margin: 8px;
+  }
+
+  /*Para mostrar el menú de hamburguesas le da un display: block, 
+  asignándole una clase de show (para que se vea) para en la propiedad transform dar el valor de 0 en el eje-X translateX(0) para mostrarlo, 
+  y después interactuar con el usando  JavaScript .*/
+  .menu-hamburguesa {
+    display: block;
+  }
+
+   nav ul.show {
+    transform: translateX(0);
+  } 
+.abajo{
+  flex-wrap: wrap;
+}
+body{
+  width: 100;
+}
+.tituloAcercaDe , .tituloContacto , .tituloPuna , .tituloServicios , .tituloTarifas{
+  text-align: center;
+}
+.contenedorAcerca{
+  display: block;
+
+}
+.aCercaImg{
+  width:100%;
+}
+.contenedorP{
+  width: 100%;
+  padding-left: 1rem;
+}
+.tarifas h3, .tarifas h4 , .tarifas p{
+  text-align: center;
+}
+
+ .ContenedorContacto{
+  width: 100%;
+} 
+iframe{
+  width: 100%;
+}
+
+.contacto{
+  flex-wrap: wrap;
+ justify-content: center;
+ width: 100%;
+}
+.form{
+ width: 95%;
+ align-items: center;
+ padding-left: 2rem;
+} 
+
+.formulario input[type="submit"]{
+  font-size: 16px;
+  padding: 8px 15px;
+}
+.boton{
+  padding-top:1rem ;
+}
+}
+
+/*En teléfonos pequeños como el iPhone 6, 7, y 8 plus, los iconos de redes sociales y el icono de desplazamiento-hacia-arriba no se muestran.
+ También hay una barra de desplazamiento horizontal.*/
+
+ @media screen and (max-width: 420px) {
+
+}  
