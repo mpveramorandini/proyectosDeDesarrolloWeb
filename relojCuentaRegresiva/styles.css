@@ -80,6 +80,7 @@ ul {
 a {
   text-decoration: none;
 }
+/*Establezca un ancho de img para todos los elementos img que no sean .logo*/
 img:not(.logo) {
   width: 100%;
 }
@@ -137,7 +138,7 @@ p {
   }
 }
 /*  global classes */
-
+/* 
 .btn {
   text-transform: uppercase;
   background: transparent;
@@ -155,7 +156,7 @@ p {
 .btn:hover {
   color: var(--clr-white);
   background: var(--clr-black);
-}
+} */
 /* section */
 .section {
   padding: 5rem 0;
@@ -215,7 +216,7 @@ Countdown Timer
   margin-right: 1rem;
   width: 5rem;
   height: 5rem;
-  display: grid;
+   display: grid; 
   place-items: center;
   text-align: center;
 }
