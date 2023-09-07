@@ -14,7 +14,7 @@
   --bottom-margin: 0.5rem;
   --bottom-margin-2: 1rem;
   --line-height: 1.7rem;
-  --transition: 0.3s;
+  /* --transition: 0.3s; */
 }
 
 html {
@@ -39,7 +39,7 @@ a {
 }
 
 a:hover {
-  text-decoration: none;
+
   color:var(--secondary-color);
 }
 
@@ -71,10 +71,11 @@ nav h1 {
 
 nav a {
   color: var(--primary-color);
-  transition: var(--transicion);
+  /* transition: var(--transicion); */
   text-transform: uppercase;
   /* font-weight: 100; */
  transition-duration: 1s;
+ transition-property: color;
 }
 /* nav a:hover {
   color: var(--secondary-color);

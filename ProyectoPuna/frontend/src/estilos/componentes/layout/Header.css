@@ -1,0 +1,21 @@
+
+header a{
+    color: white;
+    text-decoration: none;
+  }
+ header ul {
+  margin: 0;
+    list-style-type: none;
+    display:flex;
+    padding: 0.7rem;
+    justify-content:flex-end;
+    background-color:#9c8c72;
+    color: white;
+  }
+  
+  @media screen and (max-width: 720px) {
+    header ul{
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+    }

@@ -1,0 +1,38 @@
+footer {
+    background-color: #9c8c72;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    margin: 2rem 0 0;
+}
+
+.social-icons {
+    list-style: none;
+    display: flex;
+}
+
+ul.social-icons {
+    justify-content: center;
+}
+
+ul li {
+    flex-grow: 0.02;
+}
+
+.social-icons a {
+    color: #faf9f9;
+    border-radius: 15%;
+    background-color: rgb(81, 80, 80);
+    padding: 0.5rem;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+}
+
+.social-icons a:hover {
+    background-color: rgb(51, 49, 49);
+}
+
+.redes {
+    padding-bottom: 0.5rem;
+}

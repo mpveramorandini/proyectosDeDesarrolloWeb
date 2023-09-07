@@ -1,0 +1,133 @@
+/*barra de navegacion*/
+nav {
+  /* position: sticky; */
+  top: 0;
+  left: 0;
+  z-index: 1;
+  /*La propiedad de  z-index con el valor de 1  se asegura de que la barra de navegación se muestre
+     sobre cualquier otro elemento de la página web*/
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding-right: 2rem; */
+  border-bottom: solid 1px #9c8c72;
+  margin-bottom: 0.55rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.9rem;
+  list-style-type: none;
+}
+
+nav ul li {
+  flex-grow: 1;
+}
+
+nav ul li a {
+  color: rgb(81, 80, 80);
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight:400;
+  text-decoration: none;
+  transition: color 0.35s ease-in-out;
+}
+nav ul li a:hover{
+  color: #845800; 
+}
+
+.LogoCondor{
+  width: 50%;
+}
+
+
+.boton{
+  background:#9c8c72;
+  padding:0.6rem 1rem;
+  width: 5rem;/*ancho del boton*/
+  /* left: 5rem;alineacion */
+  cursor: pointer; /*aparece la manito*/
+  border-radius: 6px;
+  border:none;
+  -webkit-transition: color 0.35s ease-in-out;
+  transition: color 0.35s ease-in-out;
+  margin-right: 1rem;
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.boton:hover{
+  background-color:#9b742d;
+  color: white;
+}
+.navToggle{
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .navItems{
+    position:absolute;
+    top:90px;
+    left: 0;
+    background: white;
+    height: -webkit-fill-available;
+    width: 15rem;
+    transform: translateX(-100%);
+    transition: 0.3s ease all;
+  }
+  .navItems ul{
+     display:block;
+    flex-direction:column;
+  }
+  .navItems ul li{
+    padding-top: 1.5rem;
+  }
+  .navItems ul li a{
+    font-weight: 500;
+    font-size: 0.85rem;
+    line-height: 1.8;
+    font-style: normal;
+  }
+  .navItems ul li a:hover{
+    color: #caa45f;
+  }
+  .boton{
+    background:none;
+    padding:0;
+   color:rgb(81, 80, 80);
+    -webkit-transition: color 0.35s ease-in-out;
+    transition: color 0.35s ease-in-out;
+  }
+  .boton:hover{
+    background-color: white;
+    color: #caa45f;
+  }
+  .navItems.open{
+    transform: translateX(0) !important;
+  }
+  .navToggle{
+    display: flex !important;
+    flex-direction: column;
+    margin: 15px;
+  }
+  .navToggle span{
+    width: 30px;
+    height: 4px;
+    background-color: #9c8c72;
+    margin-bottom: 5px;
+    border-radius: 2px;
+    transform-origin: 5px 0px;
+    transition: all 0.2s linear;
+  }
+  .navToggle.open > span{
+    transform: rotate(45deg) translate(0px 0px);
+  }
+  /* .navToggle.open > span:nth-child(2){
+    display: none;
+  } */
+  .navToggle.open > span:nth-child(3){
+    transform: rotate(-45deg) translate(-5px 1px);
+  }
+}
