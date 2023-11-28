@@ -1,0 +1,53 @@
+.tituloPuna h2 {
+    color: #5b5b5b;
+    padding: 2rem 3rem;
+    text-align: left;
+    background-color: rgba(156, 140, 114, 0.34);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+.puna {
+    max-width: 960px;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+.contenedorCarusel {
+    position: relative;
+    width: 100%;
+
+}
+
+/* .punaImg {
+   max-width: 100%;
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+  } */
+
+
+.puna p,
+h3,
+h4 {
+    text-align: center;
+    color: rgb(81, 80, 80);
+    padding: 1rem;
+    text-align: left;
+    font-weight: 100;
+    line-height: 2rem;
+}
+
+.puna h3 {
+    color: #9b742d;
+    font-family: "Work Sans", Sans-serif;
+    font-weight: 400;
+    font-size: 2.25rem;
+}
+
+.puna h4 {
+    font-weight: var(--bold-font);
+    padding-bottom: 0;
+    font-size: 1.25rem;
+}

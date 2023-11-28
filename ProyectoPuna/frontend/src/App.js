@@ -3,10 +3,10 @@ import Header from "./componentes/layout/Header";
 import Nav from "./componentes/layout/Nav";
 import Footer from "./componentes/layout/Footer";
 import Inicio from "./paginas/Inicio";
-import ACercaDe from "./paginas/ACercaDe";
 import Servicios from "./paginas/Servicios";
 import Contacto from "./paginas/Contacto";
 import DestinoPuna from "./paginas/DestinoPuna";
+import ACercaDe from "./paginas/ACercaDe";
 
 function App() {
   return (
@@ -18,11 +18,10 @@ function App() {
 
 <Routes>
 <Route path="/" element={<Inicio />} />
-<Route path="aCercaDe" element={<ACercaDe/>} />
 <Route path="destinoPuna" element={<DestinoPuna/>} />
 <Route path="servicios" element={<Servicios/>} />
 <Route path="contacto" element={<Contacto/>} />
-
+<Route path="acerca" element={<ACercaDe/>} />
 </Routes>
 </BrowserRouter>
 

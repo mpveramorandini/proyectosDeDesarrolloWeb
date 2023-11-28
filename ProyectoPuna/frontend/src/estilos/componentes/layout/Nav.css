@@ -1,6 +1,6 @@
 /*barra de navegacion*/
 nav {
-  /* position: sticky; */
+  /*position: sticky;*/
   top: 0;
   left: 0;
   z-index: 1;
@@ -11,7 +11,7 @@ nav {
   justify-content: space-between;
   /* padding-right: 2rem; */
   border-bottom: solid 1px #9c8c72;
-  margin-bottom: 0.55rem;
+  background-color: white;
 }
 
 nav ul {
@@ -26,7 +26,7 @@ nav ul li {
 
 nav ul li a {
   color: rgb(81, 80, 80);
-  font-size: 14px;
+  font-size: 16px;
   text-transform: uppercase;
   font-weight:400;
   text-decoration: none;
@@ -35,15 +35,20 @@ nav ul li a {
 nav ul li a:hover{
   color: #845800; 
 }
+nav ul li a.activo{
+  font-weight:500;
+  color: #845800; 
+ }
 
 .LogoCondor{
   width: 50%;
 }
 
 
-.boton{
+.botonNav{
   background:#9c8c72;
-  padding:0.6rem 1rem;
+  padding:0.6rem;
+  height: 1rem;
   width: 5rem;/*ancho del boton*/
   /* left: 5rem;alineacion */
   cursor: pointer; /*aparece la manito*/
@@ -58,7 +63,7 @@ nav ul li a:hover{
   font-weight: 400;
 }
 
-.boton:hover{
+.botonNav:hover{
   background-color:#9b742d;
   color: white;
 }
@@ -85,22 +90,22 @@ nav ul li a:hover{
     padding-top: 1.5rem;
   }
   .navItems ul li a{
-    font-weight: 500;
-    font-size: 0.85rem;
+    font-weight: 700;
+    font-size: 2rem;
     line-height: 1.8;
     font-style: normal;
   }
   .navItems ul li a:hover{
     color: #caa45f;
   }
-  .boton{
+  .botonNav{
     background:none;
     padding:0;
    color:rgb(81, 80, 80);
     -webkit-transition: color 0.35s ease-in-out;
     transition: color 0.35s ease-in-out;
   }
-  .boton:hover{
+  .botonNav:hover{
     background-color: white;
     color: #caa45f;
   }

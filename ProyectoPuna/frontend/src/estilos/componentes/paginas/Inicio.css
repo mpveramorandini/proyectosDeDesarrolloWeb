@@ -1,7 +1,8 @@
-.slider img{
+ .d-block{ /*.slider img*/
     width: 1550px;
     height: 629px;
 }
+ 
 .columna {
     padding: 2rem;
 }
@@ -87,6 +88,8 @@
 .contAbajo a {
     text-decoration: none;
 }
+
+
 
 @media screen and (max-width: 720px) {
     .home{

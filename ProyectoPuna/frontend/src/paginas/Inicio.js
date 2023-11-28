@@ -1,14 +1,33 @@
 import React from "react";
 import "../estilos/componentes/paginas/Inicio.css";
 import { Link } from "react-router-dom";
-import Slider from "../componentes/Slider";
+
 
 const Inicio = (props) => {
   return (
     <div className="home">
-      <div className="slider">
-        <Slider/>
-      </div>
+     
+      <div id="carouselExampleFade" className="carousel slide carousel-fade">
+  <div className="carousel-inner">
+    <div className="carousel-item active">
+      <img src="imagenes/inicio/condor.jpg" className="d-block w-100" alt=""/>
+    </div>
+    <div className="carousel-item">
+      <img src="imagenes/inicio/pomez.jpg" class="d-block w-100" alt="..."/>
+    </div>
+    <div className="carousel-item">
+      <img src="imagenes/inicio/flamencos.jpg" class="d-block w-100" alt="..."/>
+    </div>
+  </div>
+  <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span className="visually-hidden">Previous</span>
+  </button>
+  <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+    <span className="visually-hidden">Next</span>
+  </button>
+</div>
       <div className="holder">
         <div className="columna">
           <h2>Bienvenidos </h2>
@@ -54,7 +73,7 @@ const Inicio = (props) => {
               className={({ isActive }) => (isActive ? "activo" : undefined)}
             >
               <img
-                src="imagenes/inicio/servicios1.jpg"
+                src="imagenes/inicio/servicios_1.jpg"
                 alt="Servicios"
               />
               <h5>Servicios</h5>

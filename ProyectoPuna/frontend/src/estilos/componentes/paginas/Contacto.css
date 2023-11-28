@@ -1,0 +1,104 @@
+
+.tituloContacto h2 {
+    color: #5b5b5b;
+    padding: 2rem 3rem;
+    text-align: left;
+    background-color: rgba(156, 140, 114, 0.34);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+  }
+ 
+  .form , .ubicacion{
+    width: 50%;
+  }
+  .form h2{
+    color: #5b5b5b;
+    font-size: 20px;
+    padding-bottom: 1.25rem;
+    padding-top: 3.5rem;
+  }
+  .contacto, .contactos{
+    max-width: 960px;
+    margin: 0 auto;
+    padding-top: 2rem;
+  }
+  .formulario p{
+    display:block; 
+    font-size: 15px;
+  }
+  .formulario p label{
+    min-width:80px;/*espacio minimo que ocupa el label*/
+    display:flex; /*caja contenedora*/
+    align-items:center; /*para que quede la etiqueta en el medio de la caja*/
+    padding-bottom: 0.3rem;
+    padding-top: 0.3rem;
+  }
+  .formulario p input, 
+  .formulario p textarea{
+    width: 90%;
+    border: 1px solid #5b5b5b;
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 6px 10px;
+    color: #5b5b5b;;
+  }
+  
+  
+  .formulario textarea{
+    resize:none;/*deja fijo el tamaño del area*/
+    height:150px;
+  } 
+  
+  .formulario input[type="submit"]{
+    background:#9c8c72;
+    color: white;
+    font-size: 16px;
+    padding: 8px 20px;
+    width: auto;/*ancho del boton*/
+    left: 5rem;/*alineacion*/
+    cursor: pointer; /*aparece la manito*/
+    border-radius: 6px;
+    border: #9c8c72 solid 1px;
+    transition-duration: 1s;
+  }
+  .formulario input[type="submit"]:hover{
+    background-color:#9b742d;/*cambia de color cuando pasa la manito*/
+  }
+  .boton{
+    padding-top: 1rem;
+  }
+  
+  .contacto{
+    display: flex;
+    justify-content: space-between;
+    flex-direction:row;
+    gap: 24px; 
+    color: rgb(81, 80, 80);
+  }
+  .ubicacion{
+    display: flex;
+    justify-content:center;
+    flex-direction:column;
+  }
+  .ubicacion a{
+    padding-top: 2rem;
+    color: rgb(81, 80, 80);
+    text-decoration: none;
+  }
+  iframe{
+    width: 100%;
+  }
+  .contactos{
+   padding-top: 2rem;
+   color: rgb(81, 80, 80);
+  }
+  .contactos li{
+    line-height: 2.5;
+    list-style:none;
+  }
+  .contactos ul{
+    padding-left: 0;
+  }
+  .icono{
+    color: #9c8c72;
+  }
