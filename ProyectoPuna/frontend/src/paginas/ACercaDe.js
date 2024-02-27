@@ -6,27 +6,35 @@ const ACercaDe = (props) => {
       <div className="tituloACercaDe">
         <h2>a cerca de </h2>
       </div>
-      <div className="contenedorAcerca">
-        <div className="imagenACerca">
-          
-          <img src="imagenes/inicio/Antofagasta_de_la_Sierra.jpg" alt="" />
-        </div>
 
-        <div className="contenedorP">
-          <div className="aCercaPalabras">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-              fuga quibusdam dolores possimus totam. Non sunt fuga laborum
-              quisquam impedit repudiandae vitae esse, nesciunt provident
-              eligendi, iusto sapiente laudantium maxime.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-              fuga quibusdam dolores possimus totam. Non sunt fuga laborum
-              quisquam impedit repudiandae vitae esse, nesciunt provident
-              eligendi, iusto sapiente laudantium maxime.
-            </p>
-          </div>
+      <div className="quienesSomos">
+        <div className="quienes">
+          <p>ANTOFAGASTA DE LA SIERRA.
+            Lorem ipsum dolor, sit amet consectetur adipisicing
+            elit. Dolore a accusantium harum suscipit quae, natus dicta. Quam
+            veritatis nemo esse? Labore inventore excepturi eius, voluptate
+            nobis enim a dolores natus. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Dolore a accusantium harum suscipit quae, natus
+            dicta. Quam veritatis nemo esse? Labore inventore excepturi eius,
+            voluptate nobis enim a dolores natus. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Lorem ipsum dolor, sit amet
+            consectetur adipisicing elit. Dolore a accusantium harum suscipit
+            quae, natus dicta. Quam veritatis nemo esse? Labore inventore
+            excepturi eius, voluptate nobis enim a dolores natus. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor, sit
+            amet consectetur adipisicing elit. Dolore a accusantium harum
+            suscipit quae, natus dicta. Quam veritatis nemo esse? Labore
+            inventore excepturi eius, voluptate nobis enim a dolores natus.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+        <div className="quienes">
+          <img
+            className="foto_personas"
+            src="imagenes/inicio/Antofagasta_de_la_Sierra.jpg"
+            alt="Personas"
+          />
         </div>
       </div>
     </div>

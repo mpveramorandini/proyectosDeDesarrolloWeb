@@ -36,3 +36,34 @@ ul li {
 .redes {
     padding-bottom: 0.5rem;
 }
+.contactosFooter{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactosFooter li {
+    list-style: none;
+    color: white;
+}
+
+.contactosFooter ul {
+    padding-left: 0;
+}
+
+.contactoFooterIzq, .contactoFooterDer {
+    width: 47%;
+    display: block;
+    text-align: center;
+}
+
+.contactoFooterIzq {
+    padding-left: 8rem;
+}
+
+.contactoFooterDer {
+    padding-right: 8rem;
+}
+.contactanos{
+    font-weight: bold;
+}
