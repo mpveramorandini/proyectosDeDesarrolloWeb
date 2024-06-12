@@ -13,7 +13,7 @@ header a{
     color: white;
   }
   
-  @media screen and (max-width: 720px) {
+  @media screen and (max-width: 1400px) {
     header ul{
       flex-wrap: wrap;
       justify-content: flex-start;

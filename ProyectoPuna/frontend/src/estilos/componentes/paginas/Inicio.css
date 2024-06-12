@@ -1,6 +1,6 @@
  .d-block{ /*.slider img*/
     width: 1550px;
-    height: 629px;
+    height: 729px;
 }
  
 .columna {
@@ -91,7 +91,7 @@
 
 
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 800px) {
     .home{
        width: 100%;
     }
@@ -99,7 +99,7 @@
       display: block;
       margin: 0;
       padding: 0;
-  width: 100%;
+      width: 100%;
 
     }
     .contAbajo{
@@ -110,8 +110,14 @@
     .columna h2{
         margin-bottom:1px;
     }
- .columna p{
+    .columna p{
     margin-top: 0;
- }
+   }
+  
+
+   .d-block{ /*.slider img*/
+    height: 350px;
+}
+ 
 }
 

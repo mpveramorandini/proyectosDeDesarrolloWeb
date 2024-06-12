@@ -67,3 +67,14 @@ ul li {
 .contactanos{
     font-weight: bold;
 }
+
+@media screen and (min-width:100px) and (max-width :800px) {
+    .contactosFooter{
+        display: block;
+    }
+    .contactoFooterIzq, .contactoFooterDer {
+        width: 98%;
+        padding-left: 1rem;
+        padding-right: 0;
+   }
+}

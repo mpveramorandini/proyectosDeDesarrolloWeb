@@ -44,7 +44,6 @@ nav ul li a.activo{
   width: 50%;
 }
 
-
 .botonNav{
   background:#9c8c72;
   padding:0.6rem;
@@ -71,10 +70,10 @@ nav ul li a.activo{
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1400px) {
   .navItems{
-    position:absolute;
-    top:90px;
+    position:absolute; /*revisar!!!!*/
+    top:0;
     left: 0;
     background: white;
     height: -webkit-fill-available;
@@ -83,7 +82,7 @@ nav ul li a.activo{
     transition: 0.3s ease all;
   }
   .navItems ul{
-     display:block;
+    display:block;
     flex-direction:column;
   }
   .navItems ul li{
@@ -101,7 +100,7 @@ nav ul li a.activo{
   .botonNav{
     background:none;
     padding:0;
-   color:rgb(81, 80, 80);
+    color:rgb(81, 80, 80);
     -webkit-transition: color 0.35s ease-in-out;
     transition: color 0.35s ease-in-out;
   }
@@ -136,3 +135,4 @@ nav ul li a.activo{
     transform: rotate(-45deg) translate(-5px 1px);
   }
 }
+

@@ -54,7 +54,7 @@ const Inicio = (props) => {
         <div className="contenedorAbajo">
           <div className="contAbajo">
             <Link
-              to="/servicios"
+              to="/destinoPuna"
               className={({ isActive }) => (isActive ? "activo" : undefined)}
             >
               <img
